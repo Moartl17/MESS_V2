@@ -1,0 +1,19 @@
+.your_nav_class .active a,.your_nav_class .active a:hover,.your_nav_class .active a:focus {
+    background-color: #536872;
+    color: #FFFFFF;
+}
+
+a.nav-link {
+    color: white;
+}
+
+.offcanvas-header{ display:none; }
+
+
+
+@media (max-width: 992px) {
+
+  .offcanvas-header{ display:block; }
+
+  
+}

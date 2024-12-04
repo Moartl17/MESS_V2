@@ -23,7 +23,7 @@ export class ProjectsComponent implements OnInit {
     this.projectsList = this.projectsService
     .getAllProjects();
 
-    console.log(this.projectsList);
+    // console.log(this.projectsList);
   }
 
 }

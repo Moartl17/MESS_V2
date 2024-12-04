@@ -1,6 +1,6 @@
-.your_nav_class .active a,.your_nav_class .active a:hover,.your_nav_class .active a:focus {
-    background-color: #536872;
-    color: #FFFFFF;
+.nav-item a:hover {
+    /* background-color: #FFFFFF;  */
+    color: #536872;
 }
 
 a.nav-link {

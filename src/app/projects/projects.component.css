@@ -1,0 +1,19 @@
+.project {
+    border: 1px solid #ccc;
+    border-radius: 2px;
+}
+
+.project-heading {
+    font-weight: normal;
+    padding: 20px;
+    cursor: pointer;
+    position: relative;
+}
+
+.project-body {
+    padding: 20px;
+}
+
+.expanded {
+    background-color: #f0f0f0;
+}

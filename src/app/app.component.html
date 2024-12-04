@@ -1,41 +1,49 @@
-<!-- <h1 style="flex: auto;">MESS - Martin Eckart Software Solutions</h1> -->
-<table style="width: 95%;">
+<form name="myMainForm">
+<table style="width: 100%;" >
+    <tbody>
   <tr style="vertical-align: top;">
       <td style="width: 83%;">
           <table style="width: 100%;">
+            <tbody>
               <tr>
+                <td>
                   <app-navbar></app-navbar>
+                </td>
               </tr>
               <tr>
-                  <router-outlet style="margin: 20px;"></router-outlet>
+                <td>
+                  <router-outlet style="margin: 10px;"></router-outlet>
+                </td>
               </tr>
+            </tbody>
           </table>
       </td>
-      <td>
+      <td style="text-align: right;">
           <table style="vertical-align: top; ">
+            <tbody>
               <tr>
-                  <td style="vertical-align: top;">
-                      <img src="SmallLogo.png" height="150" style="text-align: right;">
+                  <td >
+                      <img src="SmallLogo.png" width="200" >
                   </td>
               </tr>
               <tr>
                   <td>
-                      <p style="text-align:center;">
-                          <!-- <img src="../../assets/me.jpg" width="250" style="margin:10px;"> -->
-                          <img src="ME_Neu.jpeg" width="250" style="margin:10px;">
+                      <p>
+                          <img src="ME_Neu.jpg" width="200" style="margin:10px;">
                       </p>
                   </td>
               </tr>
+            </tbody>
           </table>
       </td>
   </tr>
 
-  <br />
   <tr>
       <td colspan=2>
           <app-footer></app-footer>
       </td>
   </tr>
+</tbody>
 </table>
 
-
+</form>

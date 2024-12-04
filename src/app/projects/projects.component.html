@@ -1,0 +1,50 @@
+<h1 >Projektübersicht</h1>
+@for (cv of projectsList; track cv.id) {
+<ul style="padding: 0px">
+    <div class="project">
+        @if(cv.to)
+        {
+            <div #div1 class="project-heading" [class.expanded]="cv.isExpanded" (click)="toggle(cv)" >
+                {{ cv.from }} - {{ cv.to }}: 
+                <span style="font-weight: bold">{{ cv.name }} </span>bei {{ cv.company }}
+                    <span class="glyphicon" [class.glyphicon-chevron-up]="cv.isExpanded" [class.glyphicon-chevron-down]="!cv.isExpanded"></span>
+            </div>
+        }
+        @else {
+            <div #div2 class="project-heading" [class.expanded]="cv.isExpanded" (click)="toggle(cv)" >
+                {{ cv.from }} - heute: 
+                <span style="font-weight: bold">{{ cv.name }} </span>bei {{ cv.company }}
+                <span class="glyphicon" [class.glyphicon-chevron-up]="cv.isExpanded" [class.glyphicon-chevron-down]="!cv.isExpanded"></span>
+            </div>
+        }
+          @if(cv.isExpanded)
+          {
+            <div class="project-body" >
+                @if(cv.shortDesc != null)
+                {
+                    <span>{{ cv.shortDesc }}:</span><br/>
+                }
+                <!-- <span *ngIf="cv.shortDesc"> {{ cv.shortDesc }}: </span><br/> -->
+                 @for (subProj of cv.subProjects; track $index) {
+                    <ul>
+                        <li>{{subProj.project}}</li>
+                    </ul>
+                 }
+                <!-- <ul *ngFor="let subProj of cv.subProjects">
+                    <li>{{subProj.project}}</li>
+                </ul> -->
+                @if(cv.technologies)
+                {
+                    <br/>
+                    Technologien: {{ cv.technologies }}
+                }
+                <!-- <div *ngIf="cv.technologies">
+                    <br/>
+                    Technologien: {{ cv.technologies }}
+                </div> -->
+        
+            </div>
+        }
+    </div>
+</ul>
+}

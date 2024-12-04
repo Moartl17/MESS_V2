@@ -3,6 +3,7 @@ import { RouterOutlet } from '@angular/router';
 import { FooterComponent } from "./footer/footer.component";
 import { NavbarComponent } from "./navbar/navbar.component";
 
+
 @Component({
   selector: 'app-root',
   standalone: true,
@@ -11,5 +12,7 @@ import { NavbarComponent } from "./navbar/navbar.component";
   styleUrl: './app.component.css'
 })
 export class AppComponent {
+
   title = 'MESS';
+
 }
